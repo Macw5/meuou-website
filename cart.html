@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Meuou</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">MEUOU</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link active">
+                        Cart
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="page-header">
+        <h1>Shopping Cart</h1>
+    </section>
+    <section class="cart-section">
+        <div class="container">
+            <div id="emptyCart" class="empty-cart" style="display: none;">
+                <h2>Your cart is empty</h2>
+                <p>Explore our collections</p>
+                <a href="collections.html" class="btn btn-primary">Continue Shopping</a>
+            </div>
+            <div id="cartContent" class="cart-grid">
+                <div class="cart-items">
+                    <h2>Order Summary</h2>
+                    <table class="cart-table" id="cartTable">
+                        <thead><tr><th>Product</th><th>Price</th><th>Quantity</th><th>Total</th><th></th></tr></thead>
+                        <tbody id="cartItemsBody"></tbody>
+                    </table>
+                </div>
+                <aside class="order-summary">
+                    <h2>Order Total</h2>
+                    <div class="summary-item"><span>Subtotal:</span><span id="subtotal">&pound;0.00</span></div>
+                    <div class="summary-item"><span>Shipping:</span><span id="shipping">FREE</span></div>
+                    <div class="summary-item tax"><span>VAT (20%):</span><span id="vat">&pound;0.00</span></div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-item total"><span>Total:</span><span id="total">&pound;0.00</span></div>
+                    <button class="btn btn-primary btn-checkout" id="checkoutBtn">Proceed to Checkout</button>
+                    <a href="collections.html" class="btn btn-secondary" style="width:100%;text-align:center;">Continue Shopping</a>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2026 Meuou. All rights reserved.</p></div></div></footer>
+    <script src="script.js"></script>
+</body>
+                  </html>
