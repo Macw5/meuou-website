@@ -1,1 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meuou - Luxury Pakistani Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">MEUOU</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        <svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1920&q=80" alt="Luxury Pakistani Fabrics" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>MEUOU</h1>
+            <p>Heritage Meets Luxury</p>
+            <p class="hero-subtitle">Timeless Pakistani Craftsmanship in Contemporary Design</p>
+            <a href="collections.html" class="btn btn-primary">Explore Collections</a>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="featured-collections">
+        <div class="container">
+            <h2>Featured Collections</h2>
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=600&q=80" alt="Bridal Collection">
+                    <h3>Bridal</h3>
+                    <p>Timeless elegance for your special day</p>
+                    <a href="collections.html?category=bridal">View Collection</a>
+                </div>
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1609709295948-17d77cb2a69b?w=600&q=80" alt="Formal Collection">
+                    <h3>Formal</h3>
+                    <p>Sophisticated designs for every occasion</p>
+                    <a href="collections.html?category=formal">View Collection</a>
+                </div>
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=600&q=80" alt="Luxury Pret">
+                    <h3>Luxury Pret</h3>
+                    <p>Ready-to-wear luxury pieces</p>
+                    <a href="collections.html?category=pret">View Collection</a>
+                </div>
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?w=600&q=80" alt="Accessories">
+                    <h3>Accessories</h3>
+                    <p>Complete your look with our curated selection</p>
+                    <a href="collections.html?category=accessories">View Collection</a>
+                </div>
+            </div>
+        </div>
+      </section>
+
+    <!-- Our Heritage Section -->
+    <section class="heritage">
+        <div class="container">
+            <div class="heritage-content">
+                <div class="heritage-text">
+                    <h2>Our Heritage</h2>
+                    <p>At Meuou, we celebrate the rich tapestry of Pakistani craftsmanship merged with contemporary elegance. Every piece tells a story of artisans dedicated to preserving traditional techniques while embracing modern design sensibilities.</p>
+                    <p>Our collections feature hand-embroidered silks, intricate zardozi work, and premium fabrics sourced from across Pakistan. We believe luxury is not just about materials—it's about the soul stitched into every garment.</p>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="heritage-images">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&q=80" alt="Pakistani Embroidery" class="heritage-img">
+                    <img src="https://images.unsplash.com/photo-1605289982774-9a6fef564df8?w=400&q=80" alt="Textile Artisan" class="heritage-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="new-arrivals">
+        <div class="container">
+            <h2>New Arrivals</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=600&q=80" alt="Zara Bridal Lehenga">
+                        <span class="badge">NEW</span>
+                    </div>
+                    <h3>Zara Bridal Lehenga</h3>
+                    <p class="product-category">Bridal</p>
+                    <p class="product-price">£2,495</p>
+                    <button class="btn btn-add-cart" data-product-id="1" data-product-name="Zara Bridal Lehenga" data-product-price="2495">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1609709295948-17d77cb2a69b?w=600&q=80" alt="Noor Silk Anarkali">
+                        <span class="badge">NEW</span>
+                    </div>
+                    <h3>Noor Silk Anarkali</h3>
+                    <p class="product-category">Formal</p>
+                    <p class="product-price">£1,299</p>
+                    <button class="btn btn-add-cart" data-product-id="2" data-product-name="Noor Silk Anarkali" data-product-price="1299">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=600&q=80" alt="Aisha Embroidered Kurta Set">
+                        <span class="badge">NEW</span>
+                    </div>
+                    <h3>Aisha Embroidered Kurta Set</h3>
+                    <p class="product-category">Luxury Pret</p>
+                    <p class="product-price">£599</p>
+                    <button class="btn btn-add-cart" data-product-id="3" data-product-name="Aisha Embroidered Kurta Set" data-product-price="599">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1571513722275-4b41940f54b8?w=600&q=80" alt="Mahira Velvet Shawl">
+                    </div>
+                    <h3>Mahira Velvet Shawl</h3>
+                    <p class="product-category">Accessories</p>
+                    <p class="product-price">£349</p>
+                    <button class="btn btn-add-cart" data-product-id="4" data-product-name="Mahira Velvet Shawl" data-product-price="349">Add to Cart</button>
+  </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&q=80" alt="Hira Chiffon Dupatta">
+                    </div>
+                    <h3>Hira Chiffon Dupatta</h3>
+                    <p class="product-category">Accessories</p>
+                    <p class="product-price">£189</p>
+                    <button class="btn btn-add-cart" data-product-id="5" data-product-name="Hira Chiffon Dupatta" data-product-price="189">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1617627143233-46b828cb8024?w=600&q=80" alt="Sana Gold Thread Gharara">
+                    </div>
+                    <h3>Sana Gold Thread Gharara</h3>
+                    <p class="product-category">Bridal</p>
+                    <p class="product-price">£1,899</p>
+                    <button class="btn btn-add-cart" data-product-id="6" data-product-name="Sana Gold Thread Gharara" data-product-price="1899">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d44?w=600&q=80" alt="Fatima Organza Maxi">
+                    </div>
+                    <h3>Fatima Organza Maxi</h3>
+                    <p class="product-category">Formal</p>
+                    <p class="product-price">£749</p>
+                    <button class="btn btn-add-cart" data-product-id="7" data-product-name="Fatima Organza Maxi" data-product-price="749">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1596783074918-c84cb06531ca?w=600&q=80" alt="Ayesha Pearl Clutch">
+                    </div>
+                    <h3>Ayesha Pearl Clutch</h3>
+                    <p class="product-category">Accessories</p>
+                    <p class="product-price">£299</p>
+                    <button class="btn btn-add-cart" data-product-id="8" data-product-name="Ayesha Pearl Clutch" data-product-price="299">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Join Our Mailing List</h2>
+            <p>Be the first to discover our new collections and exclusive offers</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <p class="newsletter-success" id="newsletterSuccess" style="display:none;">Thank you for subscribing!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MEUOU</h4>
+                    <p>Luxury Pakistani fashion fusing heritage with modern elegance.</p>
+                    <div class="social-links">
+                        <a href="#" title="Instagram">Instagram</a>
+                        <a href="#" title="Facebook">Facebook</a>
+                        <a href="#" title="Pinterest">Pinterest</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: hello@meuou.com</p>
+                    <p>Phone: +44 (0)203 XXX XXXX</p>
+                    <p>Handcrafted in Pakistan</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meuou. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                      </html>
