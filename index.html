@@ -70,11 +70,12 @@
 
     .nav-logo {
       font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: 600;
       color: var(--burgundy);
       text-decoration: none;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
     }
 
     .nav-links {
@@ -189,6 +190,35 @@
       z-index: 2;
       max-width: 800px;
       padding: 0 40px;
+    }
+
+    .hero-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(4rem, 12vw, 9rem);
+      color: var(--cream);
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      line-height: 1;
+      text-shadow: 0 2px 30px rgba(0,0,0,0.3);
+    }
+
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+      font-weight: 400;
+    }
+
+    .hero-divider {
+      width: 80px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+      margin: 28px auto;
     }
 
     .hero-eyebrow {
@@ -749,8 +779,10 @@
     <div class="hero-ornament top" style="left:50%;transform:translateX(-50%)"></div>
     <div class="hero-ornament bottom" style="left:50%;transform:translateX(-50%)"></div>
     <div class="hero-content fade-in">
-      <p class="hero-eyebrow">Pakistani Heritage Fashion</p>
-      <h1>Heritage Meets<br><em>Luxury</em></h1>
+      <p class="hero-tagline">Pakistani Heritage Fashion</p>
+      <h1 class="hero-brand">Meuou</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-eyebrow">Heritage Meets Luxury</p>
       <p class="hero-subtitle">
         Handcrafted garments that honour centuries of South Asian artistry,
         reimagined for the modern connoisseur.
